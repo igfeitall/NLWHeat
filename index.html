@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body> 
     <main>
       <div class="container">
         <div class="avatar">
@@ -32,34 +32,71 @@
 
         <p>Um estudante de Ciencia da Computação focado em Back-end</p>
 
-        <ul>
-          <li>
-            <a href="https://www.youtube.com/MrIgDark" target="_blank"
-              ><img src="imagens/youtube.svg" alt="ícone youtube"
+        <ul id = "socialMedia">
+          <li class="youtube">
+            <a 
+            href="" 
+            target="_blank"
+              ><img 
+              src="imagens/youtube.svg" 
+              alt="ícone youtube"
             /></a>
           </li>
 
-          <li>
-            <a href="https://www.instagram.com/igor.feitall/" target="_blank"
-              ><img src="imagens/instagram.svg" alt="ícone instagram"
+          <li class="instagram">
+            <a 
+            href="" 
+            target="_blank"
+              ><img 
+              src="imagens/instagram.svg" 
+              alt="ícone instagram"
             /></a>
           </li>
 
-          <li>
+          <li class="linkedin">
             <a
-              href="https://www.linkedin.com/in/igor-feital-04545a181/"
+              href=""
               target="_blank"
-              ><img src="imagens/facebook.svg" alt="ícone linkedin"
+              ><img 
+              src="imagens/facebook.svg" 
+              alt="ícone linkedin"
             /></a>
           </li>
 
-          <li>
-            <a href="https://twitter.com/igdark_bs" target="_blank"
-              ><img src="imagens/twitter.svg" alt="ícone twitter"
+          <li class="twitter">
+            <a 
+            href="" 
+            target="_blank"
+              ><img 
+              src="imagens/twitter.svg" 
+              alt="ícone twitter"
             /></a>
           </li>
-        </ul>
+        </ul>     
       </div>
     </main>
+
+    <script>
+
+      const links = {
+        github: "igfeitall",
+        youtube: "MrIgDark",
+        instagram: "igor.feitall",
+        linkedin: "in/igor-feital-04545a181",
+        twitter: "igdark_bs"
+      }
+
+      function changeSocialMediaLinks (){
+        for(let li of socialMedia.children){
+          const social = li.getAttribute("class");
+
+          li.children[0].href = "https://"+social+".com/"+links[social];
+        }
+      }
+
+      changeSocialMediaLinks()
+
+    </script>
+
   </body>
 </html>
