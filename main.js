@@ -10,7 +10,7 @@ function changeSocialMediaLinks (){
   for(let li of socialMedia.children){
     const social = li.getAttribute("class");
 
-    li.children[0].href = "https://"+social+".com/"+links[social];
+    li.children[0].href = "https://www."+social+".com/"+links[social];
   }
 }
 
