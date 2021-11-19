@@ -28,8 +28,6 @@ main {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-
-  color: var(--grey);
 }
 
 .avatar {
@@ -66,6 +64,7 @@ a {
 }
 
 p {
+  color: lightgray;
   margin-top: 2rem;
 }
 
