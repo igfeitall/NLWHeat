@@ -11,4 +11,4 @@ this pages receive a pre formated html, and fill it with gitHub infos.
 
 ## Starting
 
-the link for application is on gitHub page : https://igfeitall.github.io/NLWHeat/
+the link for application is on <a href="https://igfeitall.github.io/NLWHeatOrigin/" target="_blank">GitHubPages</a>
